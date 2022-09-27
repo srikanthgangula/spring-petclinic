@@ -2,7 +2,8 @@ node {
     stage('test') {
         sh 'echo hello'
     }
-    stage('learning') {
-        git url: 'git@github.com:srikanthgangula/spring-petclinic.git', branch: 'main'
+    stage('git') {
+        git url: 'git@github.com:srikanthgangula/spring-petclinic.git', 
+        branch: 'main'
     }
 }
